@@ -1,0 +1,19 @@
+.nav ul li{
+    display: inline;
+    text-decoration: none;
+}
+.nav{
+    background-color:  #007bff;
+    padding-top: 10px;
+    color: #fff;
+    padding-bottom: -5px;
+}
+.nav ul li a{
+    color: #fff;
+    border:#fff solid 1px;
+
+}
+.nav ul li a:hover{
+    background-color: #fff;
+    color: #007bff;
+}

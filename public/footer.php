@@ -9,13 +9,13 @@
             <div class="col-md-4">
                 <h5>Quick Links</h5>
                 <ul class="list-unstyled">
-                    <li> <i class="fas fa-book"></i> <a href="#">Courses</a></li>
+                    <li> <i class="fas fa-book"></i> <a href="../public/view-courses-and-enrol.php">Courses</a></li>
                     <li> <i class="fas fa-chalkboard-teacher"></i><a href="#">
 Instructors</a></li>
                     <li> <i class="fas fa-newspaper"></i>
-                    <a href="#">Blog</a></li>
+                    <a href="../public/blog.php">Blog</a></li>
                     <li> <i class="fas fa-phone"></i>
-                    <a href="#"> Contact</a></li>
+                    <a href="../public/contact-us.php"> Contact</a></li>
                 </ul>
             </div>
             <div class="col-md-4">

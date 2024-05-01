@@ -1,0 +1,41 @@
+SELECT enrolments.enrolmentID,enrolments.studentid, payments.paymentID, payments.amount,course.price 
+from enrolments 
+inner join 
+payments 
+on enrolments.enrolmentID = payments.enrolmentID 
+inner join 
+course 
+on enrolments.courseid = course.courseid;
+
+---------------------------------------------------------------------------
+
+SELECT sum(course.price) as total from course inner join enrolments on course.courseid = enrolments.courseid where enrolments.studentid = 'WTIT-STU-BU-39-2024';
+SELECT count(payments.amount) from payments INNER JOIN enrolments on payments.enrolmentID = enrolments.enrolmentID where enrolments.studentid = 'WTIT-STU-BU-39-2024';
+ALTER TABLE `enrolments` CHANGE `enrolmentID` `enrolmentID` INT(11) NOT NULL AUTO_INCREMENT;
+SELECT * from course inner join enrolments where enrolments.studentid = '';
+
+000webhost : 59959655Wesi*
+
+    function uploadfile($img_name, $img_size, $temp_name, $error){
+        if ($error === 0){
+            if ($img_name > 300000){
+                sucess("File is to big ");
+            }
+            else {
+                $img_ext = pathinfo($img_name, PATHINFO_EXTENSION);
+                $img_ext_lc = strtolower($img_ext);
+                $allowed_exs = array('jpg', 'jpeg','png', 'pdf', 'docx');
+                if (in_array($img_ext_lc, $allowed_exs)){
+                    $new_img_name = uniqid("IMG-", true).".".$img_ext_lc;
+                    img_upload_path = '../img/'.$new_img_name;
+                    move_uploaded_file($temp_name, $img_uploat_path);
+                }
+                else {
+                    sucess(" File not allowed  ");
+                }
+            }
+        }
+        else {
+            sucess(" An error occurred !!! ")
+        }
+    }
